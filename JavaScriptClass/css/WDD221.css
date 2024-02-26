@@ -1,0 +1,175 @@
+* { box-sizing: border-box; }
+body{ 
+	background-image:	url(../images/background.png);
+	background-size: 120%;
+	background-position: center;
+    background-repeat: no-repeat;
+    height: 1800px;
+	color: #000000;
+	font-family: Arial Black, Verdana, sans-serif;
+	
+}
+header{ 
+	background-color: #ff471a;
+	background-image: url(../images/SSCLogo.JPG);
+	background-position: left;
+    background-repeat: no-repeat;
+    height: 150px;
+	background-size: 20%;
+	text-align: center;
+	
+}
+h1{ padding: 50px 0px 0px 5.5em;
+}
+
+h2{ 
+	text-align: center;
+	margin-left: 150px;
+	font-size: 2em;
+}
+nav{ 
+	text-align: center;
+	font-weight: bold;
+	padding: 1em;
+	 
+}
+.studio{ font-style: italic;
+}
+footer{ 
+	background-color: #ff471a;
+	font-size: .60em;
+	font-style: italic;
+	text-align: center;
+	padding: 1em;
+}
+#wrapper{
+	min-width: 1000px;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #F5F5F5;
+}
+
+
+nav{float: left;
+	width: 160px;
+	font-weight: bold;
+	padding: 1em;
+	
+}
+
+nav a{text-decoration: none;
+		display: block;
+		text-align: center;
+		border: 3px outset #CCCCCC;
+		padding: 1em;
+		margin-bottom: 3em;
+		background-color:#336699;
+}
+
+nav a:link { color: #000000; }
+nav a:visited { color: #b3b3b3; }
+nav a:hover { color: #A26100; border: 3px inset #333333; }
+nav ul{ list-style-type: none;
+		padding-left: 0;
+}
+main{
+	padding: 0px 2em 25em 2em;
+	display: block;
+	
+}
+.floatright{ float: right;
+			margin-bottom: 3em;
+}
+.floatleft{ float: left;
+			margin-right: 3em;
+			margin-bottom: 1em;
+}
+
+#hero{
+	text-align: center;
+}
+
+#nothero{
+	padding-left: 21em
+}
+
+#contact{
+	text-align: center;
+}
+.br{ display: block;
+	margin-bottom: 12em;
+}
+
+.onehalf{ float: left;
+		padding: 0em 5em 0em 5em;
+		width: 50%;
+}
+.otherhalf{ float: right;
+		padding: 2em 5em 0em 5em;
+		width: 50%;
+}
+
+.paris{ float: left;
+		margin-top: 5em;
+		margin-bottom: 5em;
+}
+table{
+	border: 1px solid black;		border-collapse: collapse;		background-color: #9199DB;		margin: auto;
+	padding: 1%;
+	text-align: center;
+}
+		
+tr:nth-of-type(even){
+	background-color: #61DEE1;
+}
+th{
+	border: 1px;
+	padding: 1%;
+}
+td{
+	border: 1px solid black;
+	padding: 1%;
+		
+}
+
+#handsome{
+	padding-left: 250px;
+	padding-bottom: 50px;
+}
+
+.aboutus{
+	margin-left: 15em;
+}
+
+.zoolanderquote{
+	display: block;
+	padding: 0 15em 0 15em;
+}
+
+form{ width: 60%;
+	  display: grid;
+	  grid-gap: 1em; gap: 1em;
+	  grid-template-columns: 12em 1fr;
+}
+input[type="submit"] { 
+			  grid-column: 2 / 3;
+			  width: 9em;}
+label{ text-align: right;}
+		
+@media screen and (max-width: 600px){
+				
+		#handsome{
+			display: none;}
+		
+		#lesshandsome{
+			display: none;}
+				
+		main{
+			display: flex;
+			flex-direction: column;
+			align-items: center;}
+				
+		article, aside {
+			width: 100%;}
+}
